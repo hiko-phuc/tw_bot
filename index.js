@@ -20,5 +20,4 @@ let xnxx = new Tweet(token, rules)
 xnxx.streamConnect(5, (data) => {
   console.log(data)
   telegramSendMessage.send(data.data.text)
-  telegramSendMessage.send2(data.data.text)
 })
